@@ -128,7 +128,7 @@
     }, {
         q: "Для чего нужен тэг header?",
         a: {
-            c: "Для отделения шапки сайта отвсего остального",
+            c: "Для отделения шапки сайта от всего остального",
             a: "В него вписывают мета тэги, а также ссылку на css файлв и title для сайта",
             b: "Нет такого тэга",
             d: "Для выделения текста жирным"
@@ -237,20 +237,31 @@
         }
         function showResults(result) {
             let div = document.createElement("div");
+            let resultSaying;
+            if (result <= 3) resultSaying = "Очень плохо"; else if (result <= 7) resultSaying = "Плоховато, постарайся лучше"; else if (result <= 12) resultSaying = "Хорошо, но можно было и получше"; else resultSaying = "Отличный результат!";
             div.classList.add("quiz__results");
-            div.innerHTML = `Вас счёт: ${result} из ${questions.length}`;
+            div.innerHTML = `Вас счёт: ${result} из ${questions.length} <br> <br> ${resultSaying}`;
             document.querySelector(".quiz").appendChild(div);
         }
         document.addEventListener("click", (function(e) {
             if (e.target.classList.contains("quiz__li") && step < questions.length) {
                 if ("c" == e.target.dataset.a) result++;
-                step++;
-                if (step == questions.length) {
-                    document.querySelector(".quiz__top").remove();
-                    document.querySelector(".quiz__answers").remove();
-                    showResults(result);
-                } else showQuestion(step);
-                curStep.innerHTML = step + 1;
+                let lis = document.querySelector(".quiz__answers").querySelectorAll("li");
+                let correctLi = document.querySelector("li[data-a='c']");
+                lis.forEach((e => {
+                    e.classList.add("incorrect");
+                }));
+                correctLi.classList.remove("incorrect");
+                correctLi.classList.add("correct");
+                setTimeout((() => {
+                    step++;
+                    if (step == questions.length) {
+                        document.querySelector(".quiz__top").remove();
+                        document.querySelector(".quiz__answers").remove();
+                        showResults(result);
+                    } else showQuestion(step);
+                    curStep.innerHTML = step + 1;
+                }), 1e3);
             }
         }));
         showQuestion(step);

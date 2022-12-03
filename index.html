@@ -5,13 +5,18 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221130184625">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221203190503">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body id="header">
 	<div class="wrapper">
 		<main class="page">
+			<a href="#" data-goto="#header" class="up-btn">
+				<svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<path d="M256,213.7L256,213.7L256,213.7l174.2,167.2c4.3,4.2,11.4,4.1,15.8-0.2l30.6-29.9c4.4-4.3,4.5-11.3,0.2-15.5L264.1,131.1  c-2.2-2.2-5.2-3.2-8.1-3c-3-0.1-5.9,0.9-8.1,3L35.2,335.3c-4.3,4.2-4.2,11.2,0.2,15.5L66,380.7c4.4,4.3,11.5,4.4,15.8,0.2L256,213.7  z" />
+				</svg>
+			</a>
 			<div class="page__container">
 				<aside class="page__aside">
 					<div class="menu">
@@ -44,7 +49,9 @@
 						модели DOM на примере HTML.
 					</p>
 					<p id="gloss1">
-						<span>DOM</span> (<span>Document Object Model</span>) - представляет собой стандарт
+						<a href="gloss.html#gl1" target="_blank" class="gloss-link"><span>DOM</span></a> (<span>Document
+							Object Model</span>)
+						- представляет собой стандарт
 						консорциума W3C для программного доступа к документам <span>HTML</span> или
 						<span>XML</span>. Фактически это платформо- и языково-нейтральный интерфейс,
 						позволяющий программам и сценариям динамически обращаться и
@@ -54,17 +61,25 @@
 						В рамках данного стандарта можно выделить 3 части:
 					</p>
 					<ul>
-						<li>
+						<li id="gloss2">
 							<p>
-								<span>Core DOM</span> - стандартная модель любого структурированного
+								<a href="gloss.html#gl2" target="_blank" class="gloss-link"><span>Core DOM</span></a> -
+								стандартная модель
+								любого структурированного
 								документа
 							</p>
 						</li>
-						<li>
-							<p><span>XML DOM</span> - стандартная модель <span>XML</span> документа</p>
+						<li id="gloss3">
+							<p><a href="gloss.html#gl3" target="_blank" class="gloss-link"><span>XML DOM</span></a> -
+								стандартная модель
+								<span>XML</span> документа
+							</p>
 						</li>
-						<li>
-							<p><span>HTML DOM</span> - стандартная модель <span>HTML</span> документа</p>
+						<li id="gloss4">
+							<p><a href="gloss.html#gl4" target="_blank" class="gloss-link"><span>HTML DOM</span></a> -
+								стандартная модель
+								<span>HTML</span> документа
+							</p>
 						</li>
 					</ul>
 					<p>
@@ -82,9 +97,9 @@
 						документа - является узлом. То есть HTML документ представляется в
 						виде дерева узлов, которыми являются элементы, атрибуты и текст.
 					</p>
-					<picture><source srcset="img/1.webp" type="image/webp"><img src="img/1.JPG" alt="Древовидная модель HTML документа"></picture>
+					<picture><source srcset="img/1.webp" type="image/webp"><img src="img/1.jpg" alt="Древовидная модель HTML документа"></picture>
 					<h2 class="title" id="title2">
-						Узлы дерева HTML документа
+						<a href="gloss.html#gl5" target="_blank" class="gloss-link">Узлы</a> дерева HTML документа
 					</h2>
 					<ul>
 						<li>
@@ -103,14 +118,16 @@
 							<p>Комментарии являются узлами комментариев.</p>
 						</li>
 					</ul>
-					<picture><source srcset="img/2.webp" type="image/webp"><img src="img/2.JPG" alt="Код DOM"></picture>
+					<picture><source srcset="img/2.webp" type="image/webp"><img src="img/2.jpg" alt="Код DOM"></picture>
 					<p>
-						В этом примере корневым узлом является тэг <span>&lt;html&gt;</span> . Все остальные
+						В этом примере корневым узлом является тэг <a href="gloss.html#gl6" id="gloss6" target="_blank" class="gloss-link"><span>&lt;html&gt;</span></a> . Все остальные
 						узлы содержатся внутри &lt;html&gt;. У этого узла имеется два дочерних узла:
-						<span>&lt;head&gt;</span> и
-						<span>&lt;body&gt;</span> . Узел
-						<span>&lt;head&gt;</span> содержит узел <span>&lt;title&gt;</span> , а узел
-						<span>&lt;body&gt;</span> содержит узлы <span>&lt;h1&gt;</span> и <span>&lt;p&gt;</span>.
+						<a href="gloss.html#gl7" id="gloss7" target="_blank" class="gloss-link"><span>&lt;head&gt;</span></a>
+						и
+						<a href="gloss.html#gl8" id="gloss8" target="_blank" class="gloss-link"><span>&lt;body&gt;</span></a>
+						. Узел
+						<span>&lt;head&gt;</span> содержит узел <a href="gloss.html#gl9" id="gloss9" target="_blank" class="gloss-link"><span>&lt;title&gt;</span></a> , а узел
+						<span>&lt;body&gt;</span> содержит узлы <a href="gloss.html#gl10" id="gloss10" target="_blank" class="gloss-link"><span>&lt;h1&gt;</span></a> и <a href="gloss.html#gl11" id="gloss11" target="_blank" class="gloss-link"><span>&lt;p&gt;</span></a>.
 					</p>
 					<p>
 						Следует обратить особое внимание на то, что текст, расположенный в
@@ -119,7 +136,7 @@
 						содержит текстовый узел "HTML документ", то есть "HTML документ" не
 						является значением элемента &lt;title&gt;. Тем не менее, в рамках <span>HTML DOM</span>
 						значение текстового узла может быть доступно посредством свойства
-						<span>innerHTML</span>.
+						<a href="gloss.html#gl12" id="gloss12" target="_blank" class="gloss-link"><span>innerHTML</span></a>.
 					</p>
 					<p>
 						Все узлы <span>HTML</span> документа могут быть доступны посредством дерева,
@@ -133,7 +150,7 @@
 						а дочерние элементы одного уровня называются потомками (братьями
 						или сестрами).
 					</p>
-					<p id="gloss3">
+					<p>
 						В отношении узлов дерева соблюдаются следующие принципы:
 					</p>
 					<ul>
@@ -202,19 +219,25 @@
 					</p>
 					<ul>
 						<li>
-							<p><span>x.getElementById(id)</span> - получить элемент с указанным <span>id</span>;</p>
+							<p><a href="gloss.html#gl13" id="gloss13" target="_blank" class="gloss-link"><span>x.getElementById(id)</span></a> - получить элемент с указанным
+								<span>id</span>;
+							</p>
 						</li>
 						<li>
 							<p>
-								<span>x.getElementsByTagName(name)</span> - получить все
+								<a href="gloss.html#gl14" id="gloss14" target="_blank" class="gloss-link"><span>x.getElementsByTagName(name)</span></a> - получить все
 								элементы с указанным именем тэга ( <span>name</span> );
 							</p>
 						</li>
 						<li>
-							<p><span>x.appendChild(node)</span> - вставить дочерний узел для <span>x</span>;</p>
+							<p><a href="gloss.html#gl15" id="gloss15" target="_blank" class="gloss-link"><span>x.appendChild(node)</span></a> - вставить дочерний узел для
+								<span>x</span>;
+							</p>
 						</li>
 						<li>
-							<p><span>x.removeChild(node)</span> - удалить дочерний узел для <span>x</span>.</p>
+							<p><a href="gloss.html#gl16" id="gloss16" target="_blank" class="gloss-link"><span>x.removeChild(node)</span></a> - удалить дочерний узел для
+								<span>x</span>.
+							</p>
 						</li>
 					</ul>
 					<p>
@@ -261,25 +284,25 @@
 					<p>
 						Для определения длины списка узлов используется свойство <span>length</span>.
 					</p>
-					<picture><source srcset="img/3.webp" type="image/webp"><img src="img/3.JPG" alt="Код"></picture>
+					<picture><source srcset="img/3.webp" type="image/webp"><img src="img/3.jpg" alt="Код"></picture>
 					<p>
 						В данном примере внутрь <span>HTML</span> документа вставляется в виде списка
 						текстовое содержимое всех элементов соответствующих тэгу
 						&lt;p&gt;.
 					</p>
-					<p id="gloss6">
+					<p>
 						Для навигации по дереву в ближайших окрестностях текущего узла
 						можно использовать следующие свойства:
 					</p>
 					<ul>
 						<li>
-							<p><span>parentNode;</span></p>
+							<p><a href="gloss.html#gl17" id="gloss17" target="_blank" class="gloss-link"><span>parentNode;</span></a></p>
 						</li>
 						<li>
-							<p><span>firstChild;</span></p>
+							<p><a href="gloss.html#gl18" id="gloss18" target="_blank" class="gloss-link"><span>firstChild;</span></a></p>
 						</li>
 						<li>
-							<p><span>lastChild</span></p>
+							<p><a href="gloss.html#gl19" id="gloss19" target="_blank" class="gloss-link"><span>lastChild</span></a></p>
 						</li>
 					</ul>
 					<p>
@@ -296,9 +319,7 @@
 						<li>
 							<p>
 								document.body - для доступа к тэгу
-
-								<body> .
-
+								&lt;body> .
 							</p>
 						</li>
 					</ul>
@@ -310,21 +331,21 @@
 					<ul>
 						<li>
 							<p>
-								nodeName;
+								<a href="gloss.html#gl20" id="gloss20" target="_blank" class="gloss-link">nodeName;</a>
 							</p>
 						</li>
 						<li>
 							<p>
-								nodeValue;
+								<a href="gloss.html#gl21" id="gloss21" target="_blank" class="gloss-link">nodeValue;</a>
 							</p>
 						</li>
 						<li>
 							<p>
-								nodeType.
+								<a href="gloss.html#gl22" id="gloss22" target="_blank" class="gloss-link">nodeType.</a>
 							</p>
 						</li>
 					</ul>
-					<p id="gloss7">
+					<p>
 						Свойство <span>nodeName</span> указывает на имя узла. Это свойство имеет
 						следующие особенности:
 					</p>
@@ -457,13 +478,14 @@
 						В следующем примере показано, как можно динамически изменять
 						текстовое содержимое тэга &lt;p&gt;:
 					</p>
-					<picture><source srcset="img/4.webp" type="image/webp"><img src="img/4.JPG" alt="Код"></picture>
+					<picture><source srcset="img/4.webp" type="image/webp"><img src="img/4.jpg" alt="Код"></picture>
 					<h2 class="title" id="title5">
 						Введение в XML. Структура XML документа
 					</h2>
 					<p>
 						Показано как расширяются возможности разметки документов на
-						примере языка XML. Представлена структура XML документа и
+						примере языка <a href="gloss.html#gl23" id="gloss23" target="_blank" class="gloss-link">XML</a>.
+						Представлена структура XML документа и
 						принципы контроля его содержимого.
 					</p>
 					<h2 class="title" id="title6">
@@ -472,7 +494,7 @@
 					<p>
 						В 1986 году, задолго до того, как идея создания сети Веб была
 						воплощена в жизнь, универсальный стандартизированный язык
-						разметки <span>SGML</span> ( <span>
+						разметки <a href="gloss.html#gl24" id="gloss24" target="_blank" class="gloss-link"><span>SGML</span></a> ( <span>
 							Standardized Generalized Markup
 							Language
 						</span> ) был утвержден в качестве международного стандарта (
@@ -486,11 +508,11 @@
 						приложений. Он описывал правила, по которым должна быть
 						подготовлена информация для <span>World Wide Web</span>. Таким образом,
 						язык <span>HTML</span> - это набор предписаний SGML, сформулированных в виде
-						определения типа документа ( <span>DTD</span> ), объясняющих, что именно
+						определения типа документа ( <a href="gloss.html#gl25" id="gloss25" target="_blank" class="gloss-link"><span>DTD</span></a> ), объясняющих, что именно
 						обозначают тэги и элементы. Схема <span>DTD</span> для языка <span>HTML</span> хранится в
 						веб-браузере.
 					</p>
-					<p id="gloss11">
+					<p>
 						К недостаткам языка <span>HTML</span> можно отнести следующие:
 					</p>
 					<ul>
@@ -560,7 +582,7 @@
 					<p>
 						Рассмотрим более детально структуру и особенности этого языка.
 					</p>
-					<p id="gloss12">
+					<p>
 						<span>XML</span> (<span>eXtensible Markup Language</span>) - рекомендованный
 						<span>W3C</span> язык разметки. <span>XML</span> - текстовый формат, предназначенный для
 						хранения структурированных данных, для обмена информацией между
@@ -580,7 +602,7 @@
 						</li>
 						<li>
 							<p>
-								Поддерживает Юникод.
+								Поддерживает <a href="gloss.html#gl26" id="gloss26" target="_blank" class="gloss-link">Юникод</a>.
 							</p>
 						</li>
 						<li>
@@ -657,7 +679,8 @@
 									<p>
 										Размер <span>XML</span> документа существенно больше, чем документа
 										в альтернативных текстовых форматах передачи данных
-										(например <span>JSON</span>, <span>YAML</span> ) и особенно в форматах данных,
+										(например <a href="gloss.html#gl27" id="gloss27" target="_blank" class="gloss-link"><span>JSON</span></a>, <a href="gloss.html#gl28" id="gloss28" target="_blank" class="gloss-link"><span>YAML</span></a> ) и особенно в форматах
+										данных,
 										оптимизированных для конкретного случая использования.
 									</p>
 								</li>
@@ -697,7 +720,7 @@
 							</p>
 						</li>
 					</ul>
-					<p id="gloss13">
+					<p>
 						Вообще говоря, <span>XML</span> можно рассматривать не только как новый язык
 						разметки, но и как основу для целого семейства технологий:
 					</p>
@@ -830,8 +853,8 @@
 						языков. Взаимосвязь между <span>SGML</span>, <span>XML</span>, <span>HTML</span> и некоторыми
 						другими языками показана на следующей диаграмме:
 					</p>
-					<picture><source srcset="img/5.webp" type="image/webp"><img src="img/5.JPG" alt="Схема"></picture>
-					<p id="gloss14">
+					<picture><source srcset="img/5.webp" type="image/webp"><img src="img/5.jpg" alt="Схема"></picture>
+					<p>
 						Важным отличием <span>XML</span> от <span>HTML</span> является то большое внимание,
 						которое уделяется контролю за тем, насколько точно соблюдаются
 						правила языка при разметке документов. В зависимости от этого
@@ -871,7 +894,7 @@
 							</p>
 						</li>
 					</ul>
-					<p id="gloss15">
+					<p>
 						Рассмотрим теперь основные синтаксические правила построения <span>XML</span> документов
 					</p>
 					<ul>
@@ -914,7 +937,7 @@
 							</ul>
 						</li>
 					</ul>
-					<p id="gloss16">
+					<p>
 						<span>XML</span> документ имеет следующую структуру:
 					</p>
 					<ul>
@@ -1007,7 +1030,7 @@
 						атрибуты, допустимые значения этих атрибутов, в т.ч. значения по
 						умолчанию.
 					</p>
-					<p id="gloss17">
+					<p>
 						Чаще всего для описания схемы используются следующие
 						спецификации:
 					</p>
@@ -1020,13 +1043,15 @@
 						</li>
 						<li>
 							<p>
-								<span>XDR (XML Data Reduced)</span> - диалект <span>XML</span>, разработанный
+								<a href="gloss.html#gl29" id="gloss29" target="_blank" class="gloss-link"><span>XDR (XML Data
+										Reduced)</span></a> - диалект <span>XML</span>, разработанный
 								Microsoft.
 							</p>
 						</li>
 						<li>
 							<p>
-								<span>XSD (язык определения схем XML)</span> - рекомендована
+								<a href="gloss.html#gl30" id="gloss30" target="_blank" class="gloss-link"><span>XSD (язык
+										определения схем XML)</span></a> - рекомендована
 								консорциумом <span>W3C</span>.
 							</p>
 						</li>
@@ -1083,7 +1108,7 @@
 							</p>
 						</li>
 					</ul>
-					<p id="gloss19">
+					<p>
 						Наиболее известными языками описания схем являются следующие:
 					</p>
 					<ul>
@@ -1120,8 +1145,8 @@
 						В рамках <span>DTD</span> модель содержимого <span>XML</span> документа можно описать
 						следующим образом:
 					</p>
-					<picture><source srcset="img/6.webp" type="image/webp"><img src="img/6.JPG" alt="Модель"></picture>
-					<p id="gloss21">
+					<picture><source srcset="img/6.webp" type="image/webp"><img src="img/6.jpg" alt="Модель"></picture>
+					<p>
 						Каждый элемент документа может иметь один из типов:
 					</p>
 					<div class="page__table-wrapper">
@@ -1213,8 +1238,8 @@
 						Атрибуты, находящиеся внутри тэгов документа, описываются отдельно
 						с помощью синтаксиса:
 					</p>
-					<picture><source srcset="img/7.webp" type="image/webp"><img src="img/7.JPG" alt="Код"></picture>
-					<p id="gloss22">
+					<picture><source srcset="img/7.webp" type="image/webp"><img src="img/7.jpg" alt="Код"></picture>
+					<p>
 						При этом атрибут в DTD может иметь один из трех типов:
 					</p>
 					<ul>
@@ -1234,7 +1259,7 @@
 							</p>
 						</li>
 					</ul>
-					<p id="gloss23">
+					<p>
 						Кроме типа атрибута можно также задавать и его модальность:
 					</p>
 					<div class="page__table-wrapper">
@@ -1281,13 +1306,13 @@
 						Рассмотрим в качестве примера описание атрибутов строкового типа
 						для элемента, описывающего некоторое сообщение:
 					</p>
-					<picture><source srcset="img/8.webp" type="image/webp"><img src="img/8.JPG" alt="Code"></picture>
+					<picture><source srcset="img/8.webp" type="image/webp"><img src="img/8.jpg" alt="Code"></picture>
 					<p>
 						Если этот элемент содержит атрибуты с перечислением, то их описание
 						может выглядеть, например, следующим образом:
 					</p>
-					<picture><source srcset="img/9.webp" type="image/webp"><img src="img/9.JPG" alt="Code"></picture>
-					<p id="gloss24">
+					<picture><source srcset="img/9.webp" type="image/webp"><img src="img/9.jpg" alt="Code"></picture>
+					<p>
 						Маркированных атрибуты элемента могут быть четырех типов:
 					</p>
 					<div class="page__table-wrapper">
@@ -1340,7 +1365,7 @@
 							</tbody>
 						</table>
 					</div>
-					<p id="gloss25">
+					<p>
 						И, наконец, в <span>DTD</span> можно использовать следующие индикаторы
 						вхождения последовательностей:
 					</p>
@@ -1429,25 +1454,25 @@
 							</tbody>
 						</table>
 					</div>
-					<p id="gloss26">
+					<p>
 						В качестве примера приведем <span>DTD</span> схему, описывающую структуру
 						электронного почтового ящика:
 					</p>
-					<picture><source srcset="img/10.webp" type="image/webp"><img src="img/10.JPG" alt="Code"></picture>
-					<p id="gloss27">
+					<picture><source srcset="img/10.webp" type="image/webp"><img src="img/10.jpg" alt="Code"></picture>
+					<p>
 						Исходный <span>XML</span> документ, удовлетворяющий данной схеме, может
 						выглядеть, например, так:
 					</p>
-					<picture><source srcset="img/11.webp" type="image/webp"><img src="img/11.JPG" alt="Код лол"></picture>
-					<p id="gloss28">
+					<picture><source srcset="img/11.webp" type="image/webp"><img src="img/11.jpg" alt="Код лол"></picture>
+					<p>
 						Обратите внимание на 2-ю строчку документа, в которой указывается
 						внешняя ссылка на файл, содержащий <span>DTD</span> схему
 					</p>
-					<p id="gloss29">
+					<p>
 						В принципе, <span>DTD</span> допускает два способа использования в <span>XML</span>
 						документе.
 					</p>
-					<p id="gloss30">
+					<p>
 						В заключение укажем на следующие недостатки <span>DTD</span> схем:
 					</p>
 					<ul>
@@ -1480,7 +1505,7 @@
 			</div>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20221130184625"></script>
+	<script src="js/app.min.js?_v=20221203190503"></script>
 </body>
 
 </html>

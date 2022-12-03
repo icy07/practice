@@ -640,7 +640,10 @@ body {
   }
 }
 .page__gloss-main li:not(:last-child) {
-  margin-bottom: 0.625rem !important;
+  margin-bottom: 0.9375rem !important;
+}
+.page__gloss-main a {
+  line-height: 1.2;
 }
 @media (min-width: 89.375em) {
   .page__gloss-main a {
@@ -762,4 +765,42 @@ body {
   .quiz__answers ul li:hover {
     background-color: rgb(180, 180, 180);
   }
+}
+.quiz__answers ul li.incorrect {
+  background-color: #ff0033;
+  color: #fff;
+  pointer-events: none;
+}
+.quiz__answers ul li.correct {
+  background-color: #006633;
+  color: #fff;
+  pointer-events: none;
+}
+
+.gloss-link {
+  color: orange;
+}
+@media (any-hover: hover) {
+  .gloss-link:hover {
+    text-decoration: underline;
+  }
+}
+
+.up-btn {
+  position: fixed;
+  right: 3.125rem;
+  bottom: 3.125rem;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.up-btn svg {
+  pointer-events: none;
+  fill: #282828;
+  width: 2.5rem;
+  height: 2.5rem;
 }
