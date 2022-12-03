@@ -771,10 +771,20 @@ body {
   color: #fff;
   pointer-events: none;
 }
+@media (any-hover: hover) {
+  .quiz__answers ul li.incorrect:hover {
+    background-color: #ff0033;
+  }
+}
 .quiz__answers ul li.correct {
   background-color: #006633;
   color: #fff;
   pointer-events: none;
+}
+@media (any-hover: hover) {
+  .quiz__answers ul li.correct:hover {
+    background-color: #006633;
+  }
 }
 
 .gloss-link {
